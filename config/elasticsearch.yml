@@ -1,0 +1,23 @@
+indices.fielddata.cache.size: "30%"
+indices.cache.filter.size: "30%"
+bootstrap.mlockall: true
+
+# AWS discovery
+plugin.mandatory: "cloud-aws"
+
+cluster.name: ${CLUSTER_NAME}
+
+node.name: ${NODE_NAME}
+
+discovery.type: "ec2"
+discovery.ec2.groups: ${SECURITY_GROUP}
+discovery.ec2.ping_timeout: "30s"
+discovery.ec2.availability_zones: "us-west-2a, us-west-2b, us-west-2c"
+cloud.aws.region: "us-west-2"
+
+cloud.aws.access_key: ${AWS_ACCESS_KEY_ID}
+cloud.aws.secret_key: ${AWS_SECRET_ACCESS_KEY}
+
+discovery.zen.ping.multicast.enabled: false
+
+network.publish_host: _ec2:privateIp_
