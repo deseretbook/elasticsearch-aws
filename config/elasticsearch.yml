@@ -7,7 +7,7 @@ plugin.mandatory: "cloud-aws"
 
 cluster.name: ${CLUSTER_NAME}
 
-node.name: ${NODE_NAME}
+node.name: ${HOSTNAME}
 
 discovery.type: "ec2"
 discovery.ec2.groups: ${SECURITY_GROUP}
