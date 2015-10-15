@@ -21,3 +21,8 @@ cloud.aws.secret_key: ${AWS_SECRET_ACCESS_KEY}
 discovery.zen.ping.multicast.enabled: false
 
 network.publish_host: _ec2:privateIp_
+
+# ES_HEAP_SIZE 
+#   set as an ENV
+#   based on 8gb ram instance
+# 3.95g
